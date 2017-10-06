@@ -12,6 +12,11 @@
 		AB1EF8DB1F68F49A00BD2A4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1EF8D91F68F49A00BD2A4B /* Main.storyboard */; };
 		AB1EF8DD1F68F49A00BD2A4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1EF8DC1F68F49A00BD2A4B /* Assets.xcassets */; };
 		AB1EF8E01F68F49A00BD2A4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1EF8DE1F68F49A00BD2A4B /* LaunchScreen.storyboard */; };
+		AB1EF8EF1F68F50000BD2A4B /* NSString+Sha1.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1EF8E91F68F50000BD2A4B /* NSString+Sha1.m */; };
+		AB1EF8F01F68F50000BD2A4B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1EF8EB1F68F50000BD2A4B /* Reachability.m */; };
+		AB1EF8F11F68F50000BD2A4B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = AB1EF8EC1F68F50000BD2A4B /* README.md */; };
+		AB1EF8F21F68F50000BD2A4B /* RNCachingURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1EF8EE1F68F50000BD2A4B /* RNCachingURLProtocol.m */; };
+		AB1EF8F51F68F56A00BD2A4B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1EF8F41F68F56A00BD2A4B /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,15 @@
 		AB1EF8DC1F68F49A00BD2A4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB1EF8DF1F68F49A00BD2A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB1EF8E11F68F49A00BD2A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB1EF8E71F68F4FF00BD2A4B /* cache_sample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cache_sample-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB1EF8E81F68F50000BD2A4B /* NSString+Sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Sha1.h"; sourceTree = "<group>"; };
+		AB1EF8E91F68F50000BD2A4B /* NSString+Sha1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Sha1.m"; sourceTree = "<group>"; };
+		AB1EF8EA1F68F50000BD2A4B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		AB1EF8EB1F68F50000BD2A4B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		AB1EF8EC1F68F50000BD2A4B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AB1EF8ED1F68F50000BD2A4B /* RNCachingURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCachingURLProtocol.h; sourceTree = "<group>"; };
+		AB1EF8EE1F68F50000BD2A4B /* RNCachingURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCachingURLProtocol.m; sourceTree = "<group>"; };
+		AB1EF8F41F68F56A00BD2A4B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB1EF8F51F68F56A00BD2A4B /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,7 @@
 			children = (
 				AB1EF8D41F68F49A00BD2A4B /* cache_sample */,
 				AB1EF8D31F68F49A00BD2A4B /* Products */,
+				AB1EF8F31F68F56A00BD2A4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +70,30 @@
 		AB1EF8D41F68F49A00BD2A4B /* cache_sample */ = {
 			isa = PBXGroup;
 			children = (
+				AB1EF8E81F68F50000BD2A4B /* NSString+Sha1.h */,
+				AB1EF8E91F68F50000BD2A4B /* NSString+Sha1.m */,
+				AB1EF8EA1F68F50000BD2A4B /* Reachability.h */,
+				AB1EF8EB1F68F50000BD2A4B /* Reachability.m */,
+				AB1EF8EC1F68F50000BD2A4B /* README.md */,
+				AB1EF8ED1F68F50000BD2A4B /* RNCachingURLProtocol.h */,
+				AB1EF8EE1F68F50000BD2A4B /* RNCachingURLProtocol.m */,
 				AB1EF8D51F68F49A00BD2A4B /* AppDelegate.swift */,
 				AB1EF8D71F68F49A00BD2A4B /* ViewController.swift */,
 				AB1EF8D91F68F49A00BD2A4B /* Main.storyboard */,
 				AB1EF8DC1F68F49A00BD2A4B /* Assets.xcassets */,
 				AB1EF8DE1F68F49A00BD2A4B /* LaunchScreen.storyboard */,
 				AB1EF8E11F68F49A00BD2A4B /* Info.plist */,
+				AB1EF8E71F68F4FF00BD2A4B /* cache_sample-Bridging-Header.h */,
 			);
 			path = cache_sample;
+			sourceTree = "<group>";
+		};
+		AB1EF8F31F68F56A00BD2A4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB1EF8F41F68F56A00BD2A4B /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +128,7 @@
 				TargetAttributes = {
 					AB1EF8D11F68F49A00BD2A4B = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,7 +170,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB1EF8D81F68F49A00BD2A4B /* ViewController.swift in Sources */,
+				AB1EF8EF1F68F50000BD2A4B /* NSString+Sha1.m in Sources */,
+				AB1EF8F11F68F50000BD2A4B /* README.md in Sources */,
+				AB1EF8F01F68F50000BD2A4B /* Reachability.m in Sources */,
 				AB1EF8D61F68F49A00BD2A4B /* AppDelegate.swift in Sources */,
+				AB1EF8F21F68F50000BD2A4B /* RNCachingURLProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +299,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = cache_sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nttr.cache-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "cache_sample/cache_sample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,10 +315,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = cache_sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nttr.cache-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "cache_sample/cache_sample-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
